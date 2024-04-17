@@ -1,0 +1,532 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('assets/font/Rubik-Bold.eot');
+    src: url('assets/font/Rubik-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/font/Rubik-Bold.woff2') format('woff2'),
+        url('assets/font/Rubik-Bold.woff') format('woff'),
+        url('assets/font/Rubik-Bold.ttf') format('truetype'),
+        url('assets/font/Rubik-Bold.svg#Rubik-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('assets/font/Rubik-Medium.eot');
+    src: url('assets/font/Rubik-Medium.eot?#iefix') format('embedded-opentype'),
+        url('assets/font/Rubik-Medium.woff2') format('woff2'),
+        url('assets/font/Rubik-Medium.woff') format('woff'),
+        url('assets/font/Rubik-Medium.ttf') format('truetype'),
+        url('assets/font/Rubik-Medium.svg#Rubik-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('assets/font/Rubik-Light.eot');
+    src: url('assets/font/Rubik-Light.eot?#iefix') format('embedded-opentype'),
+        url('assets/font/Rubik-Light.woff2') format('woff2'),
+        url('assets/font/Rubik-Light.woff') format('woff'),
+        url('assets/font/Rubik-Light.ttf') format('truetype'),
+        url('assets/font/Rubik-Light.svg#Rubik-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('assets/font/Rubik-SemiBold.eot');
+    src: url('assets/font/Rubik-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('assets/font/Rubik-SemiBold.woff2') format('woff2'),
+        url('assets/font/Rubik-SemiBold.woff') format('woff'),
+        url('assets/font/Rubik-SemiBold.ttf') format('truetype'),
+        url('assets/font/Rubik-SemiBold.svg#Rubik-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('assets/font/Rubik-Regular.eot');
+    src: url('assets/font/Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+        url('assets/font/Rubik-Regular.woff2') format('woff2'),
+        url('assets/font/Rubik-Regular.woff') format('woff'),
+        url('assets/font/Rubik-Regular.ttf') format('truetype'),
+        url('assets/font/Rubik-Regular.svg#Rubik-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1190px;
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+body{
+    width: 100%;
+    font-family: 'Rubik';
+}
+#wrapper{
+    width: 100%;
+}
+header{
+    position: fixed;
+    padding: 20px 0;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    
+}
+
+#header_menu ul{
+    display: flex;
+    align-items: center;
+}
+#header_menu{
+    display: flex;
+}
+.header_btnMenu{
+    display: none;
+}
+.header_logo ,ul li a{
+    
+    align-items: center;
+    font-size: 18px;
+}
+.header_item{
+    align-items: center;
+}
+.header_item:last-child{
+    padding-right: 0;
+    margin-left: 60px;
+}
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+li{
+    font-size: 16px;
+    padding:0 15px;
+    cursor: pointer;
+}
+li a{
+    text-decoration: none;
+    font-style: normal;
+    color: #505050;
+    display: block;
+}
+li:last-child a{
+    color: #ffffff;
+}
+.btn{
+    border: none;
+    
+    background-color: #00676C;
+    border-radius: 10px;
+    color: #ffffff;
+
+}
+#header_btnLogin{
+    padding: 10px 60px;
+    border-radius: 10px;
+    font-size: 16px;
+
+}
+
+/*----------header-----------------*/
+
+main{
+    padding-top: 80px;
+}
+section{
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+}
+
+/*--------------page-----------------*/
+.page__chatbroad{
+    background-image: url(IMG/page_two_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page{
+    width: 100%;
+    height: auto;
+}
+.page__sofasystem{
+    background-image: url(IMG/Rectangle\ 7.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page__youget{
+    justify-content: center;
+    display: flex;
+}
+.page__fromsubmit{
+    padding: 50px 0;
+}
+/*--------------page-----------------*/
+/*--------------page__contain-----------------*/
+.page__contain{
+    width: 100%;
+    display: flex;
+    
+}
+.chatbroad__contain{
+    padding: 250px 0 100px 0;
+}
+.sofasystem__contain{
+    margin: 0 auto;
+    padding: 100px 0;
+    justify-content: center;
+    display: flex;
+}
+.faq__contain{
+    display: flex;
+    justify-content: space-between;
+}
+.workflow__contain__img{
+    width: 700px;
+}
+/*--------------page__contain-----------------*/
+/*--------------contain__content-----------------*/
+.chatbroad__contain__content{
+    margin: auto 0;
+}
+.chatoffer__contain{
+    padding: 100px 0;
+}
+.contain__content, .contain__img{
+    width: 50%;
+}
+.contain__content{
+    margin: auto 0;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.contain__video{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 70%;
+}
+.content{
+    width: 60%;
+    height: auto;
+    
+}
+.workflow__content{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    
+}
+.fromsubmit__contain__content{
+    width: 100%;
+}
+/*--------------contain__content-----------------*/
+/*--------------content-----------------*/
+.chatbroad__content{
+    width: 70%;
+    height: auto;
+    color: #FDFDFD;
+    
+}
+/*--------------content-----------------*/
+.chatbroad__content__tiltle{
+    font-size: 24px;
+    line-height: 33px;
+    margin: 20px 0;
+}
+.sofasystem__content__tiltle{
+    font-size: 40px;
+    line-height: 56px;
+    color: #FFFFFF;
+    width: 50%;
+    text-align: center;
+    margin: 50px 0;
+}
+.contain__content{
+    width: 40%;
+}
+.contain__img{
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.welcome__contain__content{
+    margin: auto 0;
+}
+.chatoffer__content{
+    width: 80%;
+}
+.womanchatting__content{
+    width: 80%;
+}
+.footer__container
+.content__tiltle{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+}
+h3.content__tiltle{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+}
+.content__text{
+    font-size: 16px;
+    line-height: 22px;
+    margin: 20px 0;
+}
+.welcome__content__text{
+    margin: 20px 120px 20px 0;
+}
+video{
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid #000000;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.contain__content--btn{
+    padding: 20px 120px;
+    border-radius: 15px;
+    font-size: 16px;
+}
+.youget__contain__tiltle{
+    justify-content: center;
+    display: flex;
+    font-size: 36px;
+    padding: 20px 0;
+}
+.item__img{
+    margin: 10px;
+}
+.item__text{
+    margin: 10px;
+}
+.youget__item{
+    color: #FFFFFF;
+        width: 325px;
+        height: 98px;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    background-color: #00676C;
+    margin: 20px 0;
+    
+}
+.contain__youget__item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: s;
+}
+.youget__contain{
+    width: 100%;
+    padding: 100px 0;
+    height: auto;
+    margin: 0 auto;
+}
+.workflow__content_tiltle{
+    text-align: center;
+    font-size: 36px;
+    line-height: 50px;
+    color: #00676C;
+    width: 100%;
+    margin: 50px 0;
+}
+.btn__workflow--center{
+    margin: 0;
+    text-decoration: none;
+}
+
+.faq__contain__content, .faq__contain__img{
+    width: 50%;
+}
+.fromsubmit__contain__img{
+    display: flex;
+    justify-content: flex-start;
+}
+.faq__content{
+    width: 100%;
+}
+.accordion{
+    width: 100%;
+}
+.accordion__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+}
+.faq__content__tiltle{
+    font-size: 24px;
+    margin: 20px 0;
+}
+.accordion__body{
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 20px;
+    color: #505050;
+    display:  none;
+    margin-right: 50px;
+}
+.accordion__item.active .arrow{
+    transform: rotate(180deg);
+}
+
+.arrow{
+    transition: all 0.3s;
+}
+.img__fromsubmit--mobile{
+    display: none;
+}
+.fromsubmit__contain__content{
+    width: 50%;
+}
+.fromsubmit__content{
+    width: 100%;
+    padding: 0 15px;
+}
+.content__from{
+    width: 100%;
+    margin: 20px 0;
+    color: #505050;
+}
+.content__from input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #505050;
+    margin-top: 5px;
+}
+.content__from .input__message{
+    height: 150px;
+}
+.content__btn__submit{
+    text-align: center;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.content__a__submit{
+    padding: 15px 50px;
+}
+a{
+    text-decoration: none;
+}
+.img--workflow{
+    margin: 0;
+}
+
+.welcome__content__tiltle{
+    
+    font-size: 36px;
+    line-height: 50px;
+}
+.welcome__content__text{
+    margin-bottom: 50px;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004346;
+    color: #ffffff;
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+img{
+    max-width: 100%;
+}

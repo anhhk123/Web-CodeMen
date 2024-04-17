@@ -1,0 +1,132 @@
+@media screen and (max-width: 768px) {
+    body{
+        width: 100%;
+    }
+    #wrapper{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    #header_menu{
+        display: none;
+    }
+    .header_btnMenu{
+        display: block;
+    }
+    .header_logo{
+        padding: 0;
+    }
+    .header{
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        font-size: 40px;
+    }
+    .page__contain{
+        width: 100%;
+        flex-direction: column;
+    }
+    .contain__img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .welcome__contain__content{
+        width: 100%;
+        padding: 0;
+    }
+    .contain__content--btn{
+        padding: 5% 35%;
+
+    }
+    .welcome__tiltle{
+        margin: 30px 0;
+    }
+    .contain__content{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+        margin: 0 50px;
+    }
+    .content__text{
+        line-height: 24px;
+    }
+    .contain__video{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page__chatbroad{
+        background-image: url(IMG/Vector\ 1.svg);
+    }
+    .chatoffer__contain{
+        flex-direction: column-reverse;
+    }
+    .chatoffer__content{
+        margin: 30px 50px;
+    }
+    .womanchatting__content{
+        margin: 0;
+    }
+    .page__sofasystem{
+        background-image: url(IMG/Rectangle\ 7\(1\).svg);
+    }
+    .sofasystem__content__tiltle{
+        width: 100%;
+        margin: 0 50px;
+        font-size: 28px;
+        line-height: 39px;
+    }
+    .womanchatting__contain{
+        padding: 100px 50px;
+    }
+    .youget__contain{
+        margin: 0 50px;
+        width: 100%;
+        padding: 50px 0;
+    }
+    .contain__youget__item{
+        width: 100%;
+    }
+    .youget__item{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .workflow__contain__content{
+        width: 100%;
+    }
+    .workflow__content{
+        width: 100%;
+        margin: 0;
+    }
+    .fromsubmit__content{
+        margin: 0;
+        width: 100%;
+    }
+    .content__from input{
+        width: 100%;
+    }
+    .content__a__submit{
+        width: 100%;
+        padding: 0;
+    }
+    .content__btn__submit{
+        background-color: #00676C;
+        padding: 15px 0;
+        border-radius: 10px;
+    }
+    .footer{
+        display: block;
+    }
+    .footer_logo{
+        width: 50%;
+        margin: 10px 0;
+    }
+
+}

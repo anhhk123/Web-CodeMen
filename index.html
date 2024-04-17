@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reponse.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $('.accordion__item.active .accordion__body').slideDown();
+            $('.accordion__header').click(function(){{
+                $(this).parent().toggleClass('active');
+                $(this).parent().children('.accordion__body').slideToggle();
+            }});
+        });
+        var vid = document.getElementById("video");
+        vid.autoplay = true;
+        vid.load();
+        $('body').on('click touchstart', function () {
+            const videoElement = document.getElementById('home_video');
+            if (videoElement.playing) {
+                // video is already playing so do nothing
+            }
+            else {
+                // video is not playing
+                // so play video now
+                videoElement.play();
+            }
+        });
+    </script>
+    <div id="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header_logo">
+                        <a href="index.html">
+                            <img src="IMG/Logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div id="header_menu">
+                        <ul class="nav">
+                            <li class="header_item">
+                                <a href="#">Your get</a>
+                                </li>
+                            <li class="header_item">
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li class="header_item">
+                                <a href="#">Contact</a>
+                            </li>
+                            <li class="header_item">
+                                <a class="btn" id="header_btnLogin" href="#">Login</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="header_btnMenu">
+                        <i class='bx bx-menu'></i>
+                    </div> 
+                </div>
+                
+            </div>
+            
+        </header>
+        <main>
+            <section class="page page__welcome">
+                <div class="container">
+                    <div class="page__contain welcome__contain">
+                        <div class=" welcome__contain__content">  
+                                <h2 class="content__tiltle welcome__content__tiltle ">Looking for an experienced</h2>
+                                <h2 class="content__tiltle welcome__content__tiltle">WordPress developer?</h2>
+                                <h2 class="content__tiltle welcome__content__tiltle welcome__tiltle">Welcome to WP-Sofa!</h2>
+                                <p class="content__text  welcome__content__text">Your home-from-home if you’re looking for WordPress wizards.</p>
+                                <a class="btn contain__content--btn btn--login" href="#">Try it now</a>
+                            
+                        </div>
+                        <div class="contain__img welcome__contain__img">
+                            <img class="img img__LookComputer" src="IMG/Group 6.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="page page__chatbroad">
+                <div class="container">
+                    <div class="page__contain  chatbroad__contain ">
+                        <div class="contain__content chatbroad__contain__content chatbroad__content_contain--color ">
+                            <div class="content chatbroad__content">
+                                <h3 class="content__tiltle chatbroad__content__tiltle">How it works?</h3>
+                                <p class="content__text chatborad__content__text">Simply put in a task and wait for the offers to roll in. It won’t be too long.</p>
+                                <p class="content__text">Developers who are interested in your task will reply within a short space of time, generally a couple of hours</p>
+                                <p class="content__text">Then, all you’ve got to do is decide on a developer and hire them to work on your task.</p>
+    
+                            </div>  
+                            
+                        </div>
+                        <div class="contain__video chatbroad__contain_img">
+                            <!--<img class=" img img--chatbroad" src="IMG/Chat_Dashboard - first screen 2.png" alt="">-->
+                                <img class="video chatborad__video" src="video/Part1.gif" loop autoplay muted ></img>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="page page__chatoffer">
+                <div class="container">
+                    <div class="page__contain chatoffer__contain">
+                        <div class="contain__video chatoffer__contain__img">
+                            <video class="chatoffer__video" src="video/Part2.mp4"  autoplay loop muted></video>
+                        </div>
+                        <div class="contain__content chatoffer__contain__content">  
+                            <div class="content chatoffer__content">
+                                <h3 class="content__tiltle chatoffer__content__tiltle">It’s perfect for remote working</h3>
+                                <p class="content__text">The idea behind this innovative and unique platform is to create a system for talented developers and business owners to connect and work together.  </p>
+                                <p class="content__text">It’s something you can use from the comfort of your sofa, with the promise of a smooth working experience, with fast client/developer communication via chat.</p>
+                            
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </section>
+            
+            <section class="page page__womanchatting">
+                <div class="container">
+                    <div class="page__contain womanchatting__contain">
+                        <div class="contain__content womanchatting__contain__content">
+                            <div class="content womanchatting__content">
+                                <h3 class="content__tiltle">What makes WP-Sofa different from other platforms?</h3>
+                                <p class="content__text content__text--color">The platform has been designed to save time and be poth to work with. It’s a way of outsourcing that can be done at home, from the comfort of your sofa. </p>
+                                <p class="content__text content__text--color">Looking for a WordPress expert can be a bit of a pefield if you’re doing it yourself. There are no checks in place, the developer might be overselling their experience, or they might be too busy to deliver on time, which means an issue with late delivery.</p>
+                            
+                            </div>  
+                            
+                        </div>
+                        <div class="contain__img">
+                            <img class="img " src="IMG/sammy-line-woman-chatting-online 1.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="page page__sofasystem">
+                <div class="container">
+                    <div class="sofasystem__contain ">
+                        <h4 class="sofasystem__content__tiltle">The WP-Sofa system is completely different from this kind of experience. </h4>
+                            
+                    </div>
+                </div>
+                
+            </section>
+            <section class="page page__youget">
+                <div class="container">
+                    <div class="youget__contain">
+                        <h3 class="youget__contain__tiltle">You get</h3>
+                        <div class="contain__youget__item">
+                            <div class="youget__item">
+                                <div class="item__img">
+                                    <img src="IMG/sammy-line-jumping-dog 1.svg" alt="">
+
+                                </div>
+                                <div class="item__text">Access to a verified talent pool of developers that are reliable, trustworthy, and experienced.</div>
+                            </div>
+                            <div class="youget__item">
+                                <div class="item__img">
+                                    <img src="IMG/sammy-line-sitting-dog-raised-paw-1 1.svg" alt="">
+
+                                </div>
+                                <div class="item__text">Prices depend on the urgency of the task but start from 19€/$ per hour.</div>
+                            </div>
+                            <div class="youget__item">
+                                <div class="item__img">
+                                    <img src="IMG/sammy-line-sitting-dog 1.svg" alt="">
+
+                                </div>
+
+                                <div class="item__text">Fast turnaround for tasks that utilizes a tried and tested booking system.</div>
+                            </div>
+                            <div class="youget__item">
+                                <div class="item__img">
+                                    <img src="IMG/sammy-line-sitting-dog-raised-paw-1 1.svg" alt="">
+
+                                </div>
+
+                                <div class="item__text">Weekend and through-the-night support.</div>
+                            </div>
+                            <div class="youget__item">
+                                <div class="item__img">
+                                    <img src="IMG/sammy-line-sitting-dog-raised-paw-1 1.svg" alt="">
+
+                                </div>
+
+                                <div class="item__text">Communications are monitored 24/7 to ensure you get the best possible service.</div>
+                            </div>
+                            <div class="youget__item">
+                                <div class="item__img">
+                                    <img src="IMG/sammy-line-jumping-dog 1.svg" alt="">
+
+                                </div>
+
+                                <div class="item__text">Quality checks are included in the all-inclusive price.</div>
+                            </div>
+                            <div class="youget__item">
+                                <div class="item__img">
+                                    <img src="IMG/sammy-line-sitting-dog 1.svg" alt="">
+
+                                </div>
+
+                                <div class="item__text">Opportunities to leave feedback throughout the progress of each task.</div>
+                            </div>
+                            <div class="youget__item">
+                                <div class="item__img">
+                                    <img src="IMG/sammy-line-sitting-dog-raised-paw-1 1.svg" alt="">
+
+                                </div>
+
+                                <div class="item__text">Reliability that no other agency can offer.</div>
+                            </div>
+                            <div class="youget__item">
+                                <div class="item__img">
+                                    <img src="IMG/sammy-line-sitting-dog 1.svg" alt="">
+
+                                </div>
+
+                                <div class="item__text">Fast delivery.</div>
+                            </div>
+                            
+                        </div>
+                    
+                </div>
+                </div>
+                
+            </section>
+            <section class="page page__workflow">
+                <div class="container">
+                    <div class="page__contain">
+                        <div class="contain__img workflow__contain__img">
+                            <img class="img img--workflow" src="IMG/sammy-line-workflow 1.svg" alt="">
+                        </div>
+                        <div class="contain__content workflow__contain__content">
+                            <div class="content workflow__content">
+                                <h4 class="content__tiltle workflow__content_tiltle">To take advantage of this and more, sign up today!</h4>
+                                    <a href="" class="btn contain__content--btn btn__workflow--center">Try it now</a>
+                            </div>  
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </section>
+            <section class="page page__faq">
+                <div class="container">
+                    <div class="page__contain faq__contain">
+                        <div class="contain__content faq__contain__content">  
+                            <div class="content faq__content">
+                                <h3 class="content__tiltle faq__content__tiltle">FAQ</h3>
+                                <div class="accordion">
+                                    <div class="accordion__item active">
+                                    <div class="accordion__header">
+                                        <h4>Can your developer fix my wordPress prolem?</h4>
+                                        <i class='bx bxs-chevron-down arrow'></i>
+                                    </div>
+                                    <div class="accordion__body">
+                                        <p>absolutely. Our developer work aroimd the world and are experts in all thing worldPress. T ensure thay stay at the top of the game we encourage personal training and development</p>
+                                        
+                                    </div>
+                                    </div>
+                                    <div class="accordion__item">
+                                    <div class="accordion__header">
+                                        <h4>Can I rely on the deadlines?</h4>
+                                        <i class='bx bxs-chevron-down arrow'></i>
+                                    </div>
+                                    <div class="accordion__body">
+                                        <p>absolutely. Our developer work aroimd the world and are experts in all thing worldPress. T ensure thay stay at the top of the game we encourage personal training and development</p>
+                                        
+                                    </div>
+                                    </div>
+                                    <div class="accordion__item">
+                                    <div class="accordion__header">
+                                        <h4>Can I give feedback?</h4>
+                                        <i class='bx bxs-chevron-down arrow'></i>
+                                    </div>
+                                    <div class="accordion__body">
+                                        <p>absolutely. Our developer work aroimd the world and are experts in all thing worldPress. T ensure thay stay at the top of the game we encourage personal training and development</p>
+                                        
+                                    </div>
+                                    </div>
+                                    <div class="accordion__item">
+                                    <div class="accordion__header">
+                                        <h4>How can I communicate with a developer?</h4>
+                                        <i class='bx bxs-chevron-down arrow'></i>
+                                    </div>
+                                    <div class="accordion__body">
+                                        <p>absolutely. Our developer work aroimd the world and are experts in all thing worldPress. T ensure thay stay at the top of the game we encourage personal training and development</p>
+                                        
+                                    </div>
+                                    </div>
+                                    <div class="accordion__item">
+                                    <div class="accordion__header">
+                                        <h4>How do I know the developer is trustworthy?</h4>
+                                        <i class='bx bxs-chevron-down arrow'></i>
+                                    </div>
+                                    <div class="accordion__body">
+                                        <p>absolutely. Our developer work aroimd the world and are experts in all thing worldPress. T ensure thay stay at the top of the game we encourage personal training and development</p>
+                                        
+                                    </div>
+                                    </div>
+                                    <div class="accordion__item">
+                                        <div class="accordion__header">
+                                            <h4>What about the security of my business information?</h4>
+                                            <i class='bx bxs-chevron-down arrow'></i>
+                                        </div>
+                                        <div class="accordion__body">
+                                            <p>absolutely. Our developer work aroimd the world and are experts in all thing worldPress. T ensure thay stay at the top of the game we encourage personal training and development</p>
+                                            
+                                        </div>
+                                        </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        <div class="contain__img faq__contain__img">
+                            <img class="img faq__img" src="IMG/Question marks ill.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="page page__fromsubmit">
+                <div class="container">
+                    <div class="page__contain">
+                        <div class="contain__img fromsubmit__contain__img">
+                            <img class="img img--fromsubmit" src="IMG/Left column.svg" alt="">
+                            <img class="img img__fromsubmit--mobile" src="IMG/Left column-mobile.svg" alt="">
+                        </div>
+                        <div class="contain__content fromsubmit__contain__content">
+                            <div class="content fromsubmit__content">
+                                <div class="content__from">
+                                    <p class="input__tiltle">Name</p>
+                                    <input type="text" class="input__info">
+                                </div>
+                                <div class="content__from">
+                                    <p class="input__tiltle">Email</p>
+                                    <input type="text" class="input__info">
+                                </div>
+                                <div class="content__from">
+                                    <p class="input__tiltle">Message</p>
+                                    <input type="text" class="input__info input__message">
+                                </div>
+                                <div class="content__btn__submit">
+                                    <a class="content__a__submit btn" href="">Submit</a>
+                                </div>
+                            </div>  
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container ">
+                <div class="footer__inner">
+                    <div class="footer_logo">
+                        <img src="IMG/Logo(1).svg" alt="">
+                    </div>
+                    <div class="footer_tiltle">
+                        <p>copyright 2022 all right reseved.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+    
+</body>
+</html>
